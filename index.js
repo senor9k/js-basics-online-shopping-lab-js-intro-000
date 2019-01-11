@@ -28,7 +28,7 @@ function viewCart() {
     text = `${text}${cart[i].itemName} at $${cart[i].itemPrice}`
     if ( i > 1 && i < cart.length-2) {
       text = `${text}, `
-    } else if (i = cart.length-2){
+    } else if (i === cart.length-2){
       text = `${text}, and`
     }
   }
