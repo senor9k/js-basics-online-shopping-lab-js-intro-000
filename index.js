@@ -29,7 +29,7 @@ function viewCart() {
     if ( i > 1 && i < cart.length-2) {
       text = `${text}, `
     } else if (i === cart.length-2){
-      text = `${text}, and`
+      text = `${text}, and `
     }
   }
   return `In your cart, you have ${text}.`
