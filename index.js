@@ -25,7 +25,7 @@ function viewCart() {
 
   let text = ""
   for (let i=0; i<cart.length; i++) {
-    text =+ `${cart[i].itemName} at $${cart[i].itemPrice}`
+    text = `${text}${cart[i].itemName} at $${cart[i].itemPrice}`
     if ( cart.length > 2 && i < cart.length-2) {
       text = `${text}, `
     } else if (i === cart.length-2){
@@ -37,6 +37,9 @@ function viewCart() {
 
 function total() {
   // write your code here
+  for (let i=0; i<cart.length; i++) {
+    sum =+ ${cart[i].itemPrice}
+  }
 }
 
 function removeFromCart(item) {
