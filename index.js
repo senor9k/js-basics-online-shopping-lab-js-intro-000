@@ -26,11 +26,13 @@ function viewCart() {
   let text = ""
   for (let i=0; i<cart.length; i++) {
     text = `${text}${cart[i].itemName} at $${cart[i].itemPrice}`
-    if ( i < cart.length-2) {
+/*
+    if ( i > 1 && i < cart.length-2) {
       text = `${text}, `
     } else if (i = cart.length-2){
       text = `${text}, and`
     }
+    */
   }
   return `In your cart, you have ${text}.`
 }
